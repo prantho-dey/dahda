@@ -1,0 +1,126 @@
+.home-area {
+
+    .home-content {
+
+        span {
+            font-size: 22px;
+            font-weight: 700;
+            color: $color;
+        }
+        h2 {
+            font-size: 72px;
+            font-weight: 700;
+            margin: 0;
+            padding-top: 10px;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            line-height: 36px;
+            color: $pragraph-color;
+            text-align: justify;
+        }
+        
+    }
+}
+.button {
+    display: inline-block;
+    margin-top: 70px;
+    
+    a {
+        width: 210px;
+        height: 60px;
+        font-size: 18px;
+        color: $white;
+        background-color: #F79F24;
+        display: inline-block;
+        border-radius: 150px;
+        line-height: 60px;
+        padding-left: 30px;
+        position: relative;
+        text-transform: capitalize;
+
+        &:hover{
+            background-color: $white;
+            border: 1px solid $theme-color;
+            color: $theme-color;
+        }&:hover i{
+            background-color: $theme-color;
+            color: $white;
+        }
+
+        i {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: $white;
+            color: $theme-color;
+            line-height: 50px;
+            text-align: center;
+            top: 5px;
+            right: 5px;
+            @include transition(.3s);
+        }
+    }
+}
+
+
+
+
+// Responsive 
+
+// LG Device : 992px 
+@media (min-width: 992px) and (max-width: 1200px) {
+    .home-area {
+        .home-content {
+            h2 {
+                font-size: 62px;
+            }
+            .button {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+// MD Device : 768px 
+@media (min-width: 768px) and (max-width: 991px) {
+    .home-area {
+        .home-content {
+            .button {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+// Extra Small Device  
+@media (max-width: 575px) {
+    .home-area {
+        .home-content {
+            h2 {
+                font-size: 52px;
+                margin-bottom: 20px;
+            }
+            .button {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+// SM Small Device : 550px 
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .home-area {
+        .home-content {
+            .button {
+                margin-top: 30px;
+            }
+        }
+    }
+    
+}
+
+

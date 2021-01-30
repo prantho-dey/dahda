@@ -1,0 +1,117 @@
+.section-title {
+
+    h3 {
+        font-size: 39px;
+        font-weight: 700;
+        line-height: 58px;
+        margin: 0;
+    }
+    p {
+        font-size: 20px;
+        line-height: 36px;
+        padding-top: 15px;
+    }
+}
+
+.about-area {
+
+    .single-about {
+        background-color: #fff;
+        padding: 4px;
+        @include transition(.4s);
+    
+
+        &:hover .about-1{
+            transform: scale(1.4);
+        }
+        &:hover .about-2{
+            transform: scale(1.4);
+        }
+        &:hover .about-3{
+            transform: scale(1.4);
+        }
+        .about-1 {
+            width: 78px;
+            height: 90px;
+            @include transition(.4s);
+        }
+        .about-2 {
+            height: 90px;
+            width: 90px;
+            @include transition(.4s);
+        }
+        .about-3 {
+            width: 111px;
+            height: 90px;
+            @include transition(.4s);
+        }
+        h3 {
+            margin-top: 35px;
+            font-size: 30px;
+            color: $color;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 36px;
+
+        }
+    }
+}
+
+
+
+// Responsive 
+
+// LG Device : 992px 
+@media (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+// MD Device : 768px 
+@media (min-width: 768px) and (max-width: 991px) {
+    .about-area {
+        .single-about {
+        
+            .about-1 {
+                width: 58px;
+                height: 70px;
+            }
+            .about-2 {
+                height: 70px;
+                width: 70px;
+            }
+            .about-3 {
+                width: 90px;
+                height: 70px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 26px;
+    
+            }
+        }
+    }
+}
+
+// Extra Small Device  
+@media (max-width: 575px) {
+    .about-area {
+        .single-about {
+        margin-bottom: 50px;
+        }
+    }
+}
+
+// SM Small Device : 550px 
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .about-area {
+        .single-about {
+        margin-bottom: 50px;
+        }
+    }
+    
+}

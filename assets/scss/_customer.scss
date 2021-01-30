@@ -1,0 +1,190 @@
+
+.customer-area {
+    
+    .slider-active {
+
+        
+        .single-slider {
+            i {
+                font-size: 100px;
+                color: $color;
+                margin-bottom: 40px;
+            }
+            p {
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 38px;
+                margin-bottom: 30px;
+                padding: 0;
+            }
+            .slider-content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .slider-img {
+                    img {
+                        width: 70px;
+                        height: 70px;
+                        margin-right: 15px;
+                    }
+                }
+                .slider-title {
+                    h6 {
+                        font-size: 24px;
+                        color: $color;
+                        text-transform: capitalize;
+                        span {
+                            display: block;
+                            font-size: 20px;
+                            color: $pragraph-color;
+                            font-weight: 300;
+                            margin-left: -47px;
+                            padding-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.slider-active {
+
+    .owl-nav {
+
+        .owl-prev {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            line-height: 55px !important;
+            background-color: $color !important;
+            top: 50%;
+            transform: translate(-50%);
+            left: 0;
+            color: $white !important;
+            border-radius: 50%;
+            font-size: 25px !important;
+
+            &:hover {
+                background-color: $theme-color !important;
+            }
+        }
+        .owl-next {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            line-height: 55px !important;
+            text-align: center;
+            background-color: $color !important;
+            top: 50%;
+            transform: translate(-50%);
+            right: 0;
+            color: $white !important;
+            border-radius: 50%;
+            font-size: 25px !important;
+
+            &:hover {
+                background-color: $theme-color !important;
+            }
+        }
+    }
+}
+
+// Responsive 
+
+// LG Device : 992px 
+@media (min-width: 992px) and (max-width: 1200px) {
+    
+}
+
+// MD Device : 768px 
+@media (min-width: 768px) and (max-width: 991px) {
+    .slider-active {
+
+        .owl-nav {
+    
+            .owl-prev {
+                
+                top: 100%;
+                 left: 45%;
+                transform: translateX(-50%);
+            }
+            .owl-next {
+                top: 100%;
+                left:55%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    
+}
+
+// Extra Small Device  
+@media (max-width: 575px) {
+
+    .customer-area {
+    
+        .slider-active {
+    
+            
+            .single-slider {
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .slider-active {
+
+        .owl-nav {
+    
+            .owl-prev {
+                
+                top: 100%;
+                 left: 40%;
+                transform: translateX(-50%);
+            }
+            .owl-next {
+                top: 100%;
+                left:60%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+
+// SM Small Device : 550px 
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    
+    .customer-area {
+    
+        .slider-active {
+    
+            
+            .single-slider {
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .slider-active {
+
+        .owl-nav {
+    
+            .owl-prev {
+                
+                top: 100%;
+                 left: 45%;
+                transform: translateX(-50%);
+            }
+            .owl-next {
+                top: 100%;
+                left:55%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+

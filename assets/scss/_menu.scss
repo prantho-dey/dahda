@@ -1,0 +1,104 @@
+.menu-area {
+
+    .single-menu {
+        img {
+            overflow: hidden;
+        }
+        &:hover img {
+            transform: scale(1.1);
+        }
+        h4 {
+            font-size: 24px;
+            font-weight: 700;
+            color: $color;
+            margin: 20px 0;
+            padding: 0;
+        }
+        p {
+            font-size: 20px;
+            line-height: 36px;
+            padding: 0;
+        }
+        .menu-price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .price {
+                font-size: 22px;
+                display: inline-block;
+                color: $color;
+                font-weight: 700;
+            }
+            .button {
+                font-size: 18px;
+                color: $theme-color;
+                border: 1px solid $theme-color;
+                padding: 4px 13px;
+                display: inline-block;
+                margin-top: 0;
+                border-radius: 100px;
+                @include transition(.4s);
+
+                &:hover {
+                    background-color: $theme-color;
+                    border-color: transparent;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+
+// Responsive 
+
+// LG Device : 992px 
+@media (min-width: 992px) and (max-width: 1200px) {
+    .menu-area {
+        .single-menu {
+            h4 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+// MD Device : 768px 
+@media (min-width: 768px) and (max-width: 991px) {
+    .menu-area {
+        .single-menu {
+            margin-bottom: 30px;
+        }
+    }
+    .button {
+        margin-top: 0px;
+    }
+}
+
+// Extra Small Device  
+@media (max-width: 575px) {
+    .menu-area {
+        .single-menu {
+            margin-bottom: 30px;
+        }
+    }
+    .button {
+        margin-top: 0px;
+    }
+}
+
+// SM Small Device : 550px 
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .menu-area {
+        .single-menu {
+            margin-bottom: 30px;
+        }
+    }
+    .button {
+        margin-top: 0px;
+    }
+}

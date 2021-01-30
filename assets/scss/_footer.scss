@@ -1,0 +1,211 @@
+.footer-area {
+
+    .footer-logo {
+
+        h4 {
+            font-size: 40px;
+            color: $color;
+            margin-bottom: 6px;
+
+            span {
+                color: $theme-color;
+            }
+        }
+        p {
+          font-size: 20px;
+          line-height: 36px;  
+        }
+    }
+    .footer-service {
+        margin-left: 30px;
+
+        h4 {
+            font-size: 24px;
+            color: $color;
+            font-weight: 700;
+            margin-bottom: 21px;
+            text-transform: capitalize;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+
+                a {
+                    display: block;
+                    font-size: 20px;
+                    color: $pragraph-color;
+                    margin-bottom: 10px;
+
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+    .footer-connect {
+        h4 {
+            font-size: 24px;
+            color: $color;
+            font-weight: 700;
+            margin-bottom: 21px;
+            text-transform: capitalize;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                display: inline-block;
+                a {
+                     display: block;
+                     width: 35px;
+                     height: 35px;
+                     font-size: 15px;
+                     color: $pragraph-color;
+                     text-align: center;
+                     line-height: 35px;
+                     border: 1px solid $pragraph-color;
+                     border-radius: 50%;
+                     margin-right: 10px;
+
+                     &:hover {
+                         background-color: $theme-color;
+                         color: $white;
+                         border-color: transparent;
+                     }
+                }
+            }
+        }
+    }
+}
+
+
+// Scroll Top Button 
+.scroll-top-button {
+	position: fixed;
+	bottom: 20px;
+	right: 400px;
+	font-size: 20px;
+	width: 40px;
+	height: 40px;
+	background-color: $theme-color;
+	text-align: center;
+	line-height: 40px;
+	color: $white;
+    border-radius: 50%;
+    animation: scroll 3s linear infinite;
+
+    @keyframes scroll {
+        0% {
+            bottom: 20px;
+        }
+        50% {
+            bottom: 50px;
+        }
+        100% {
+            bottom: 20px;
+        }
+    }
+}
+
+// Custom Cursor 
+.cursor {
+    width: 30px;
+    height: 30px;
+    border: 4px solid $theme-color;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 50ms;
+    @include transition(.2s);
+    animation: cursor .5s infinite alternate;
+    pointer-events: none;
+    z-index: 9999;
+    animation: cursor 1s linear infinite;
+
+    @keyframes cursor {
+        0% {
+            opacity: .3;
+            transform: scale(1);
+        }
+        50% {
+            opacity: .9;
+            transform: scale(1.6);
+        }
+        100% {
+            opacity: .3;
+            transform: scale(1);
+        }
+    }
+}
+
+// Responsive 
+
+
+// LG Device : 992px 
+@media (min-width: 992px) and (max-width: 1200px) {
+    .scroll-top-button {
+        right: 20px;
+    }
+}
+
+// MD Device : 768px 
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .footer-area {
+        .footer-service {
+            margin-bottom: 50px;
+            margin-left: 0px;
+        }
+        .footer-connect {
+            margin-bottom: 50px;
+        }
+    }
+    .scroll-top-button {
+        right: 20px;
+    }
+}
+
+// Extra Small Device  
+@media (max-width: 575px) {
+    .footer-area {
+        .footer-logo {
+            margin-bottom: 50px;
+        }
+        .footer-service {
+            margin-bottom: 50px;
+            margin-left: 0px;
+        }
+        .footer-connect {
+            margin-bottom: 50px;
+        }
+    }
+    .scroll-top-button {
+        right: 10px;
+    }
+    
+}
+
+// SM Small Device : 550px 
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    
+    .footer-area {
+        .footer-logo {
+            margin-bottom: 50px;
+        }
+        .footer-service {
+            margin-bottom: 50px;
+            margin-left: 0px;
+        }
+        .footer-connect {
+            margin-bottom: 50px;
+        }
+    }
+    .scroll-top-button {
+        right: 10px;
+    }
+}
+
